@@ -1,23 +1,15 @@
-import React from "react";
 import "./style.modal.css";
 import { useState } from "react";
 import api from "../../utils/api";
-import { useEffect } from "react";
-import camera from "../../assets/img/camera.png";
+
 
 export default function Modal({ isOpen, setModalFechado }) {
   const [nome, setNome] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [senha, setSenha] = useState<string>("");
-  const [foto, setFoto] = useState<any>("");
   const [select, setSelect] = useState<string>(""); // state que contém a opção de tipo de usuario selecionado
 
-  // verificar o que tem dentro do input de arquivo
-  // pega tudo que acontece dentro de algo ex: input
 
-  function verificarCampoUpload(event: any) {
-    setFoto(event.target.files[0]);
-  }
 
   function cadastrarUsuario(event: any) {
     event.preventDefault();

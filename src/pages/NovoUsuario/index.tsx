@@ -1,11 +1,16 @@
 import React, { useRef } from 'react';
 import './style.newuser.css';
+import Modal from '../../components/Modal/modal';
+import { useState } from "react";
 
 export default function CardUsuario(props: any) {
   const cardWidth: number = 500;
   const degIncrement: number = 6;
 
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const [modalAberto, setModalAberto] = useState(false);
+
 
   const getRotateDeg = (input: number): string => {
     if (input < cardWidth * 0.33) {
@@ -50,7 +55,13 @@ export default function CardUsuario(props: any) {
       onMouseLeave={onMouseLeave}
     >
       <h1>Usuários</h1>
-      <button>+ Cadastrar</button>
+      <button onClick={() => setModalAberto(true)}>+ Cadastrar</button>
+      <Modal
+                    isOpen={modalAberto}
+                    setModalFechado={() =>
+                      setModalAberto(!setModalAberto)
+                    }
+                  />
     </div>
     </div>
   );
