@@ -1,0 +1,202 @@
+/* MAIN */
+.main_cadastro {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  /* min-height: calc(100vh - 339px); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 1000;
+}
+
+.botaoFechar {
+  position: fixed;
+  width: 1%;
+  display: flex;
+  justify-content: right;
+  color: white;
+  margin-left: 85%;
+  margin-top: -2%;
+  cursor: pointer;
+}
+
+ .botao_cadastrar{
+  text-align: center;
+    border-radius: 8px;
+    background-color: #cf4b83;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 3.5vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 80%;
+    cursor: pointer;
+}
+.main_cadastro .container_cad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_cadastro .cad_conteudo {
+  background: linear-gradient(114.61deg, #8dbe8d6a 1.08%, #f2f1f12a 99.26%);
+  box-shadow: 30px 30px 60px #00000080;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 400px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: var(--branco);
+}
+
+.main_cadastro h1 {
+  font-family: var(--font1);
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.main_cadastro hr {
+  margin: 20px auto;
+  width: 80%;
+  height: 10%;
+  background-color: var(--rosa);
+  border: none;
+  border-radius: 50%;
+}
+
+.main_cadastro .cad_formulario {
+  width: auto;
+  height: auto;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font2);
+  padding: 15px;
+}
+
+.main_cadastro .cad_linha1_input,
+.main_cadastro .cad_linha2_input {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.main_cadastro .cad_linha1_input > div:nth-child(1),
+.main_cadastro .cad_linha2_input > div:nth-child(2) {
+  flex: 1;
+}
+
+.main_cadastro .cad_linha1_input > div:nth-child(2),
+.main_cadastro .cad_linha2_input > div:nth-child(1) {
+  flex: 2;
+}
+
+.main_cadastro .cad_box_input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.main_cadastro label {
+  font-size: 15px;
+}
+
+.main_cadastro .cad_box_input2 > input,
+.main_cadastro .cad_box_input > input {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #b5b5b5;
+  background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
+  box-shadow: 30px 30px 60px 0px #00000080;
+  backdrop-filter: blur(15px);
+  color: var(--branco);
+  font-size: 16px;
+}
+
+.main_cadastro #cad_select_skill:focus-visible,
+.main_cadastro .cad_box_input2 > input:focus-visible,
+.main_cadastro .cad_box_input > input:focus-visible {
+  outline: 2px solid var(--rosa);
+}
+
+/* Cor de fundo do autocomplete */
+.main_cadastro input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--verde) inset;
+}
+
+/* Cor do texto do autocomplete */
+.main_cadastro input:-webkit-autofill {
+  -webkit-text-fill-color: var(--branco);
+}
+
+.main_cadastro .cad_box_input2 > input::placeholder,
+.main_cadastro .cad_box_input > input::placeholder {
+  color: #ffffff80;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main_cadastro .cad_linha_select {
+  display: flex;
+  gap: 10%;
+  margin: 20px 0;
+}
+
+.main_cadastro #cad_select_skill {
+  flex: 2;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #b5b5b5;
+  background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
+  box-shadow: 30px 30px 60px 0px #00000090;
+  backdrop-filter: blur(15px);
+  color: #ffffffaa;
+  font-size: 16px;
+}
+
+.main_cadastro #cad_select_skill option {
+  /* appearance: none; */
+  background-color: #454158;
+  margin: 2px 0;
+  /* background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%); */
+}
+
+.enviarCadastro:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 680px) {
+  .main_cadastro .cad_conteudo {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+  }
+  .main_cadastro .cad_formulario {
+    width: 50%;
+  }
+  .main_cadastro .container_cad {
+    align-items: normal;
+    margin-bottom: 13%;
+  }
+  .main_cadastro {
+    z-index: 0;
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+  --background-menu: #1f1f1f;
+  --verde: #01b574;
+  --branco: #f4f4f4;
+
+  --font1: "Tajawal", sans-serif;
+}
+
+#headz header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#headz label {
+  margin-top: 1.5%;
+  margin-right: 3%;
+  position: relative;
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+}
+
+#headz label input {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+}
+
+#headz label span {
+  position: absolute;
+  left: 70px;
+  width: 40px;
+  height: 23px;
+  background: var(--verde);
+  border-radius: 80px;
+  transition: 0, 5s;
+}
+
+#headz label input:checked ~ span {
+  background: #cf4b83;
+}
+
+#headz label span i {
+  transition: 0, 5s;
+  top: 3.8px;
+  left: 2px;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+#headz label input:checked ~ span i {
+  left: 18px;
+  background: #393939;
+}

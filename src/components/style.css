@@ -1,0 +1,54 @@
+.tabelaEqpm td {
+  padding: 1% 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tabelaEqpm th {
+  padding: 1% 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linhaTabela {
+  /* display: flex; */
+  width: 82vw;
+  background-color: #dceee8;
+}
+
+.id {
+  margin-left: -5%;
+  font-weight: bold;
+}
+
+.modelo {
+  margin-left: 4%;
+}
+
+.fabricante {
+  margin-left: 5%;
+}
+
+.data {
+  width: 10vw;
+  /* margin-right: -4%; */
+}
+
+.consumo {
+  margin-right: -3%;
+}
+
+.valor {
+  margin-right: -2%;
+}
+.check {
+  margin-left: -3%;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

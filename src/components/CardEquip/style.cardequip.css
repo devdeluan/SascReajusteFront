@@ -1,0 +1,53 @@
+#menuSasc .tabelaEqpm td {
+  padding: 1% 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#menuSasc .tabelaEqpm th {
+  padding: 1% 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menuSasc .linhaTabela {
+  width: 60vw;
+  background-color: #dceee8;
+}
+
+#menuSasc .id {
+  margin-left: -5%;
+  font-weight: bold;
+}
+
+#menuSasc .modelo {
+  margin-left: 4%;
+}
+
+#menuSasc .fabricante {
+  margin-left: 5%;
+}
+
+#menuSasc .data {
+  width: 10vw;
+  margin-right: -4%;
+}
+
+#menuSasc .consumo {
+  margin-right: -3%;
+}
+
+#menuSasc .valor {
+  margin-right: -2%;
+}
+#menuSasc .check {
+  margin-left: -3%;
+}
+
+#menuSasc input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

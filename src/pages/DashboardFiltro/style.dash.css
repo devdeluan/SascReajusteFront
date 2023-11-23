@@ -1,0 +1,15 @@
+#dash .secaoGrafico {
+  display: flex;
+  flex-direction: column;
+  width: 150vh;
+  margin-left: 300px;
+}
+
+#dash {
+  background-color: #5d5d5d;
+}
+
+#dash .grafico {
+  margin: 25px;
+  padding: 25px;
+}
