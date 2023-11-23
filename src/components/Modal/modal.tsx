@@ -19,7 +19,6 @@ export default function Modal({ isOpen, setModalFechado }) {
     formData.append("nome", nome); //
     formData.append("email", email);
     formData.append("password", senha);
-    formData.append("user_img", foto);
     formData.append("tipo_user", select);
 
     api

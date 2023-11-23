@@ -1,7 +1,7 @@
-import "./style.cardequip.css";
+import "./style.css";
 
-export default function CardEquipamento(props: any) {
-  function parseListaEquipamento() {
+export default function CardUsuario(props: any) {
+  function parseListaUsuario() {
     if (typeof props.id === "string") {
       return JSON.parse(props.id);
     } else {
@@ -15,11 +15,9 @@ export default function CardEquipamento(props: any) {
         <tbody>
           <tr className="linhaTabela">
             <td>{props.id}</td>
-            <td>{props.modelo}</td>
-            <td>R$ {props.valor}</td>
-            <td>{props.data}</td>
-            <td>{props.consumo}(kWh)</td>
-            <td>{props.fabricante}</td>
+            <td>{props.nome}</td>
+            <td>{props.email}</td>
+            <td>{props.tipo_user}</td>
           </tr>
         </tbody>
       </div>

@@ -56,13 +56,13 @@ export default function CardUsuario(props: any) {
     >
       <h1>Usuários</h1>
       <button onClick={() => setModalAberto(true)}>+ Cadastrar</button>
-      <Modal
+    </div>
+    <Modal
                     isOpen={modalAberto}
                     setModalFechado={() =>
                       setModalAberto(!setModalAberto)
                     }
                   />
-    </div>
     </div>
   );
 }
